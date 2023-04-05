@@ -40,7 +40,6 @@ const ArticleTemplate = ({ data }) => {
     <Layout menu={menu.data} activeDocMeta={activeDoc}>
       <section className="Article">
         <Container>
-
           <nav aria-label="Breadcrumb" className="breadcrumb">
             <ul>
               <li>
@@ -65,11 +64,13 @@ const ArticleTemplate = ({ data }) => {
 
           <div className="topContainer">
             <div className="articleImageContainer">
+              <div className="backPicture">
             <StaticImage
                   src="../images/RoundDesign.jpg"
                   alt="SnapTrade Logo"
                   placeholder="blurred" 
                   />
+                  </div>
             <div className="articleImage">
               {article.featured_image && 
                 <GatsbyImage

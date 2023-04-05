@@ -24,7 +24,7 @@ export const Header = ({menu}) => (
       </div>
       <div className="rightContent">
       <div className="flex_items">
-         <Link to = "">
+         <Link to = "/">
          Home
           </Link>
       </div>

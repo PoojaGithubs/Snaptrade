@@ -31,6 +31,14 @@ header {
   margin-right: 40px;
   margin-top: 10px;
   font-size: 18px;
+  @media screen and (max-width: $mobile)
+  {
+    padding-left: 0px;
+  }
+  @media screen and (max-width: $tablet)
+  {
+    padding-left: 0px;
+  }
 }
  
     
