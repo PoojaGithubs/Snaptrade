@@ -1,0 +1,41 @@
+.CategoriesWithImage {
+  padding-bottom: 120px;
+
+
+  .HeaderWrap {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .FlexWrap {
+    gap: 40px;
+  }
+
+  .CategoryItem {
+    border-radius: 10px;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    border: 1px solid rgba(71, 159, 148, 0);
+    &:hover {
+      box-shadow: 10px 14px 24px rgba(0, 0, 0, 0.12);
+      border: 1px solid rgba(71, 159, 148, 1);
+    }
+  }
+
+  .CategoryLabel {
+    position: absolute;
+    bottom: 15px;
+    background: $theme-blue;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 28px;
+    display: block;
+    width: 94%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+}

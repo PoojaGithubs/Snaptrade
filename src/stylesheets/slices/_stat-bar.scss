@@ -1,0 +1,32 @@
+.stats {
+  background: $theme-blue;
+  box-shadow: 3px 6px 16px rgba(80, 97, 136, 0.46);
+  border-radius: 10px;
+  z-index: 1;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px 60px;
+  .stat {
+    max-width: 280px;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+
+    h2 {
+      font-weight: bold;
+      font-size: 50px;
+      line-height: 72px;
+      margin-bottom: 0;
+    }
+    p {
+      font-size: 20px;
+      line-height: 150%;
+
+      text-align: center;
+      letter-spacing: 0.01em;
+    }
+  }
+}

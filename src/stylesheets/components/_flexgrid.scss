@@ -1,0 +1,49 @@
+@mixin width-list {
+  &-1{ width: calc((100% /12)*1); }
+  &-2{ width: calc((100% /12)*2); }
+  &-3{ width: calc((100% /12)*3); }
+  &-4{ width: calc((100% /12)*4); }
+  &-5{ width: calc((100% /12)*5); }
+  &-6{ width: calc((100% /12)*6); }
+  &-7{ width: calc((100% /12)*7); }
+  &-8{ width: calc((100% /12)*8); }
+  &-9{ width: calc((100% /12)*9); }
+  &-10{ width: calc((100% /12)*10); }
+  &-11{ width: calc((100% /12)*11); }
+  &-12{ width: calc((100% /12)*12); }
+}
+
+
+.flex___wrap{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+
+  row-gap: 20px;
+  &.center{
+    justify-content: center;
+  }
+  .flex___item{
+    width: 100%;
+    padding: 0 5px;
+  }
+  .flex___item.large{
+    @media only screen and (min-width: $min-width-xl){
+      @include width-list;
+    }
+
+  }
+  .flex___item.medium{
+    @media only screen and (min-width: $min-width-l){
+      @include width-list;
+    }
+
+  }
+  .flex___item.small{
+    @media only screen and (min-width: $min-width-md){
+      @include width-list;
+    }
+  }
+}

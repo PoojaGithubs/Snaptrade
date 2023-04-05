@@ -1,0 +1,91 @@
+.BrokerageGrid{
+  .brokerages {
+    padding: 0 5px 0px;
+    .flex_grid {
+      display: inline-flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      align-items: center;
+  
+      column-gap: 60px;
+      row-gap: 30px;
+    }
+    .copy {
+      max-width: 420px;
+      margin-right: -50px;
+      padding-bottom: 40px;
+      margin-top: -40px;
+      .subtitle {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 120%;
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+      }
+    }
+    
+  }
+  .tileContainer {
+    padding: 0 1%;
+    width: 100%;
+    margin-bottom: 170px;
+    display: grid;
+    flex-direction: column;
+    justify-content: space-evenly;
+    grid-template-columns: auto auto auto auto auto auto;
+    column-gap: 20px;
+    row-gap: 20px;
+    @nest & img {
+      width: 75%;
+    }
+    @nest & p {
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.2px;
+      margin: 0 auto;
+    }
+    @media only screen and (max-width: 600px) {
+      grid-template-columns: auto auto auto auto;
+      column-gap: 8px;
+      row-gap: 8px;
+      margin-bottom: 100px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+  
+  .tileImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    @media only screen and (max-width: 600px) {
+      width: 90%;
+    }
+  }
+  .tile {
+    height: 180px;
+    margin-right: 2%;
+    background: #fdfdfd;
+    box-shadow: 0 2px 20px 0 rgba(119, 119, 119, 0.12);
+    &:hover {
+      box-shadow: 0 2px 20px 0 rgba(7, 134, 113, 0.66);
+    }
+    border-radius: 8px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition: 0.25s all;
+  
+    @nest & .subtext {
+      line-height: 1.2em;
+      margin: 0;
+      font-weight: 600;
+    }
+    @media only screen and (max-width: 600px) {
+      height: 65px;
+    }
+  }
+  
+}

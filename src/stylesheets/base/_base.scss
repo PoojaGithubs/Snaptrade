@@ -1,0 +1,122 @@
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+*,
+html {
+  /* -webkit-font-smoothing: antialiased; */
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+  top: 0;
+  
+}
+::selection {
+  background: #fff7c7; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #fff7c7; /* Gecko Browsers */
+}
+
+/**/
+body {
+  font-family: $font-sans-serif;
+  color: $theme-black;
+  letter-spacing: 0;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.auto-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(var(--auto-grid-min-size), 1fr)
+  );
+  grid-gap: 2rem;
+  max-width: inherit;
+}
+.Container{
+  max-width: 1240px;
+  margin: 0 auto;
+  position: relative;
+}
+.headings{
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 120%;
+  letter-spacing: 0.01em;
+}
+.subheadings{
+  font-weight: 700;
+  font-size: 39px;
+  line-height: 120%;
+}
+.body{
+  font-family: $font-sans-serif-body;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+}
+.FlexWrap {
+  @media screen and (min-width: $tablet){
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.alt{
+  color: #ffffff;
+}
+.btn{
+  box-shadow: 3px 6px 13px rgba(60, 80, 123, 0.29);
+  border-radius: 10px;
+  padding: 8px 20px 6.5px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: max-content;
+  a{
+
+  }
+  &.primary{
+    background: $theme-yellow;
+  }
+  &.secondary{
+    background: #ffffff;
+    border: 3px solid $theme-black;
+  }
+  &.borderless{
+    border: none;
+    box-shadow: none;
+  }
+}
+main,
+header,
+footer {
+  padding: 0;
+  margin: 0 auto;
+}
+main{
+  overflow: hidden;
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: $min-width-l) {
+  header,
+  footer {
+    padding: 0 10px;
+  }
+}
+
+/* Medium Devices, Desktops, Large Devices, Wide Screens */

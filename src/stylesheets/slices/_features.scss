@@ -1,0 +1,42 @@
+.FeatureSection{
+  .features {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    &___item {
+      width: 195px;
+      text-align: center;
+  
+      .icon {
+        background: $theme-teal;
+        border-radius: 50%;
+        height: 178px;
+        width: 178px;
+        position: relative;
+        margin: 0 auto;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 3px 6px 16px rgba(91, 135, 131, 0.32);
+      }
+      p {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 28px;
+        padding: 10px 5px;
+      }
+    }
+  }
+  .title_wrap {
+    display: block;
+    text-align: center;
+    padding: 65px 0 55px;
+    position: relative;
+    z-index: 1;
+    h3 {
+      max-width: 355px;
+      margin: 0 auto;
+    }
+  }
+}

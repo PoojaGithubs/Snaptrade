@@ -1,0 +1,38 @@
+section {
+  padding: 60px 0;
+}
+.stats_features {
+  padding: 40px 0 65px;
+   
+}
+
+.back_design {
+  position: absolute;
+  z-index: 0;
+  &.orn_1a {
+    top: 0;
+    right: 0;
+    transform: translateY(-70%);
+  }
+  &.orn_1b {
+    left: 0;
+    transform: translate(-20%, 40%);
+  }
+  &.orn_1c {
+    right: -90px;
+    bottom: 0;
+    transform: translateY(50%);
+  }
+  &.orn_2a {
+    left: -40px;
+    top: -130px;
+  }
+  &.orn_2b {
+    right: 50px;
+    top: -120px;
+  }
+  @media only screen and (max-width: $min-width-md) {
+    transform: scale(0.5);
+  }
+}
+

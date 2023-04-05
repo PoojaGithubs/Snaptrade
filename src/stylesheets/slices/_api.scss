@@ -1,0 +1,36 @@
+.api {
+  background: $theme-black;
+  padding: 105px 5px 127px;
+  .copy {
+    .subtitle {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 28px;
+      text-transform: uppercase;
+      color: white;
+      display:block;
+    }
+    p {
+      margin-bottom: 30px;
+    }
+    padding: 0 10px;
+  }
+
+  .code_box {
+    border: 2px solid $theme-teal;
+    border-radius: 10px;
+    padding: 48px 48px 68px;
+    position: relative;
+    code {
+      font-family: Inconsolata;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 28px;
+      .code-label {
+        display: block;
+        color: $theme-yellow;
+      }
+    }
+  }
+}

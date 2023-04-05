@@ -1,0 +1,130 @@
+
+
+
+footer {
+  background: $theme-black;
+  .footer{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 64px 5px;
+    min-height: 280px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    a:hover {
+      color: #EBB964;
+    }
+    &___image{
+      top: 0px;
+      left: 0;
+      
+      transform: translateY(-50%);
+      position: absolute;
+      max-width: 100%;
+      overflow: hidden;
+      &:before{
+        content: "SNAPTRADE";
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 35px;
+        line-height: 120%;
+
+        text-align: center;
+        position: absolute;
+        left: 1em;
+        top: 56.5%;
+        z-index: 2;
+      }
+    }
+    &___copy{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 28px;
+      font-family: Quicksand;
+      text-align: center;
+    }
+    &___btns{
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+      padding-bottom: 20px;
+      gap: 40px;
+    }
+  
+    &___logo{
+      display: flex;
+      align-items: center;
+      
+      justify-content: flex-end;
+      position: absolute;
+      right: 2.5%;
+      top: 50%;
+      transform: translateY(-50%);
+      .logo_back{
+        background: #FFFFFF;
+        box-shadow: 3px 6px 16px rgba(91, 135, 131, 0.32);
+        width: 217px;
+        height: 217px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .passiv_logo{
+          overflow: visible;
+        }
+        .passiv_logo:before{
+          content: "Built by";
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 120%;
+          transform: translateY(-80%);
+          display: block;
+          z-index: 5;
+          position: relative;
+          color: $theme-black;
+        }
+      }
+    }
+  }
+}
+
+.bottomPanel{
+  padding:40px;
+  margin-left: -32px;
+  margin-right: -50px;
+  background: $theme-teal;
+  position: relative;
+  z-index: 9;
+
+  
+h2{
+  font-size: 25px;
+align-items: center;
+
+}
+.divide{
+  display:flex;
+  
+}
+}
+.left p{
+  width:80%;
+  padding-bottom:10px; 
+ }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: $min-width-l) {
+  .footer___copy{
+    padding: 100px 0 200px;
+  }
+  .footer___logo{
+    top: 97.5%!important;
+    transform: translateY(-100%)!important;
+  }
+}
