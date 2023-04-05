@@ -118,13 +118,13 @@ const ArticleTemplate = ({ data }) => {
        
               <div className="stickyBoxCenter">
                 <div className="SideBanner">
-                  <PrismicRichText field={article.sidebar_banner?.document?.data?.banner_text?.richText}/>
+                  {/* <PrismicRichText field={article.sidebar_banner?.document?.data?.banner_text?.richText}/> */}
                  <h2>Changable banner for links</h2>
                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</p>
                  <button className="btnPrimary">Link here</button>
-                  <PrismicLink className="btnPrimary" href={article.sidebar_banner?.document?.data?.link?.url} >
+                  {/* <PrismicLink className="btnPrimary" href={article.sidebar_banner?.document?.data?.link?.url} >
                     Learn More
-                  </PrismicLink>
+                  </PrismicLink> */}
                 </div>
               </div>
 
@@ -191,7 +191,7 @@ const ArticleTemplate = ({ data }) => {
                   {/* Greenbox */}
 
                       <h2>Stay in the loop for more</h2>
-                      <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit</p>
+                      <p>Incididunt nostrud enim cillum dolore ullamco amet id voluptate proident.</p>
                       <div className="emailpannel">     
                         <form >           
                             <input id="NewsletterEmail" name="NewsletterEmail" type="email" placeholder="Your Email"/>

@@ -6124,6 +6124,11 @@
     "globby" "^11.1.0"
     "lodash" "^4.17.21"
 
+"gatsby-plugin-page-progress@^2.2.1":
+  "integrity" "sha512-ItrUyMQOyhMjtEsJ+IKQVKNJ7qa+8E4P16mQSPd1fsxTUcmEn5vNT47pCVnePjT5MuxarFRTbvy1mcHARgp0ew=="
+  "resolved" "https://registry.npmjs.org/gatsby-plugin-page-progress/-/gatsby-plugin-page-progress-2.2.1.tgz"
+  "version" "2.2.1"
+
 "gatsby-plugin-prismic-previews@^5.2.6":
   "integrity" "sha512-QBu1tFdRtZ8U5HdgP6ugU7L95M7LWHchPaldefPYjPsd9fqoreIXsLwK8py8A4PYs0ADTZWXEjC1N7bylxUe6A=="
   "resolved" "https://registry.npmjs.org/gatsby-plugin-prismic-previews/-/gatsby-plugin-prismic-previews-5.2.8.tgz"
