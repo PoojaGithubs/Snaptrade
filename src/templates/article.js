@@ -170,17 +170,19 @@ const ArticleTemplate = ({ data }) => {
           </div>
         </Container>
       </section>
-      <div className="otherArticles">
-      {/* <div className="footer___image">
+      <div className="footer___images">
       
       <StaticImage
-        src="../images/Ornament82.jpg"
+        src="../images/design/ornament_1d.png"
         alt=""
         layout="fixed"
         placeholder="blurred"
       />
-      </div> */}
+      </div>
+      <div className="otherArticles">
+       
       <SliceZone slices={article.body} components={components} context={{articles: articles}}/>
+    
      </div>
      
       <div class="bottomPanel">

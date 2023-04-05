@@ -123,6 +123,7 @@
   
   .articleContent {
     max-width: 700px;
+    margin-top: 5%;
     // p:nth-child(3) {
     //   background: #1F2627;
     //   border-radius: 5px;
@@ -374,6 +375,7 @@ border-radius: 10px;
   background-color: #3C507B;
   padding-top: 40px;
   position: relative;
+  z-index:4;
 p{
   color:white;
 font-size:40px;
@@ -407,3 +409,18 @@ margin-left:5%;
   }
 }
 
+.otherArticles{
+  position: relative;
+  z-index:5;
+}
+ .footer___images{
+    right: 0;
+    z-index: 13;
+    position: relative;
+    top: -137px;
+    float: right;
+    
+
+  
+
+}

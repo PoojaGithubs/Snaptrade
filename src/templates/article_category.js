@@ -166,7 +166,16 @@ const ArticleCategoryTemplate = ({ data }) => {
                 </PrismicLink>
               </div>
             ))}
-          </div>      
+          </div> 
+          <div className="backImageOfArticle">
+           
+          <StaticImage
+                  src="../images/Ornament12.jpg"
+                  alt="SnapTrade Logo"
+                  placeholder="blurred"
+                 
+                  />
+                  </div>     
         </div> 
         
             
